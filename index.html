@@ -1,37 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="css/examples.css" />
+
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/content.css" />
+  
+
+  <script defer src="js/content.js"></script>
+  <script defer src="js/home.js"></script>
+
+
 </head>
-<body>
-    hello world!!!!!
-    <button>클릭1</button>
-    <button>클릭2</button>
-    <button>클릭3</button>
-    <table border=1>
-        <tr>
-        <td>이름</td>
-        <td>점수</td>
-        </tr>
-        <tr>
-        <td>홍길동</td>
-        <td>10000</td>
-        </tr>
-        <tr>
-        <td>홍길순</td>
-        <td>20000</td>
-        </tr>
-    </table>
-    <script>
-        document.querySelector('button')
-                .addEventListener('click', () => {
-                    window.alert('hi');
-                }, false);
+<body class="body">
+
+  <ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage" class="detail-Page">About</a></li>
+    <li data-menuanchor="firstPage-info" class="active"><a href="#firstPage" class="detail-info">Introduce</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Skill / Education</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">Team Project</a></li>
+</ul>
+
+  <div id="fullpage">
+
+    <div class="section " id="section0">
+      <div class="intro">
+        <!-- home.html -->
+        <div class="global-home">
+          <div class="hdr">
+            <div class="util-box">
+              <div class="logo-box animated">
+                <div class="logo animated">
+                  <img src="/img/profile/photo.jpg" />
+                </div>
+                <div class="head-title animated" >I'm GangHyun KIM</div>
+              </div>
+            </div>
+            <div class="util-wrap">
+              <div class="util-box">
+                <div class="search-box-wrap">
+                  <div class="input_tag">
+                    <li class="detail-box">
+                      <a href="javascript:void(0)" class="detail-icon">상세</a>
+                    </li>
+                    <ul class="input_tag__tags">
+                      <div id="hashtags"></div>
+                      <li class="input_tag__tags__input">
+                        <select name="searchType" id="searchType" style="display: none">
+                          <option value="KEYWORD">키워드</option>
+                          <option value="HASHTAG">해시태그</option>
+                        </select>
+                        <input type="text" id="keyword" placeholder="　　　　　　　　　　　　　　A New Web developer
+                        " name="keyword" readonly />
+                      </li>
+                    </ul>
+                    <div class="search-box">
+                      <button id="searchBtn">검색</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="menu">
+                  <input type="checkbox" class="detailCHK" id="collapsible" />
+                  <div class="menuitems">
+                    <div class="detailChoice">
+                      <div class="detailmenu">
+                        <div class="scroll Areaboxs">
+                          <div id="tab1" class="cont" style="z-index: 2; display: block;">
+                            <div class="btn-coffee">
+                              <div class="textBox"> 
+                                <p>
+                                  이제 막 개발의 세계에 발을 들인 신입 개발자 김강현 입니다. <br><br>
+                                  요즘, 하나 하나 새로운 것을 만들어가는 재미에 푹 빠져있습니다. <br>
+                                  앞으로 어디까지 배우고 성장해 나갈 수 있을지, <br>
+                                  벌써부터 가슴이 두근거리고 기대됩니다. <br>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- home.html -->
+      </div>
+    </div>
+
+    <div class="section" id="section1">
+      <div class="intro">
+        <!-- main.html -->
+        <div class="global-main">
+          <div class="main">
+            <div class="inner main-inner">
+        
+              <section id="skill" class="skill">
+                <h2>Skill</h2>
+                <div class="shop-list-wrap">
+                  <div class="shop-list-box">
+                    <ul class="shops-box">
+                      <li class="shop-each">
+                        <div class="shop-container">
+                          <div class="shop-container-util shop-each_img shop-img-rd">
+                            <img src="https://img.icons8.com/color/344/java-coffee-cup-logo--v1.png" />
+                            <img src="https://img.icons8.com/color/344/oracle-logo.png" />
+                            <img src="https://img.icons8.com/color/344/thymeleaf.png" style="margin-right: 0;"/>
+                            <img src="https://img.icons8.com/color/344/api-settings.png" />
+                          </div>
+                          <div class="shop-container-util shop-each_title">
+                            <span><a href="javascript:void(0)" class="prevent">백엔드</a></span>
+                          </div>
+                          <div class="shop-container-util shop-each_hashtag">
+                            <ul>
+                              <li class="shop-hashtag-rep rep1">
+                                <div>
+                                  <span class="mainHashtag">#Java11</span>
+                                  <span class="mainHashtag">#Oracle DB</span>
+                                </div>
+                              </li>
+                              <br />
+                              <li class="shop-hashtag-rep rep2">
+                                <div>
+                                  <span class="mainHashtag">#Thymeleaf</span>
+                                  <span class="mainHashtag">#REST API</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="shop-each">
+                        <div class="shop-container">
+                          <div class="shop-container-util shop-each_img shop-img-rd">
+                            <img src="https://img.icons8.com/color/344/html-5--v2.png" />
+                            <img src="https://img.icons8.com/color/344/css3.png" />
+                            <img src="https://img.icons8.com/color/344/javascript--v1.png" style="margin-right: 0;"/>
+                          </div>
+                          <div class="shop-container-util shop-each_title">
+                            <span><a href="javascript:void(0)" class="prevent">프론트엔드</a></span>
+                          </div>
+                          <div class="shop-container-util shop-each_hashtag">
+                            <ul>
+                              <li class="shop-hashtag-rep rep1">
+                                <div>
+                                  <span class="mainHashtag">#HTML5</span>
+                                  <span class="mainHashtag">#CSS3</span>
+                                  <span class="mainHashtag">#JavaScript(ES6)</span>
+                                </div>
+                              </li>
+                              <br />
+                              <li class="shop-hashtag-rep rep2">
+                                <div>
+                                  <span class="mainHashtag">#AJAX</span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="shop-each">
+                        <div class="shop-container">
+                          <div class="shop-container-util shop-each_img shop-img-rd">
+                            <img src="https://img.icons8.com/color/344/spring-logo.png" />
+                            <img src="https://img.icons8.com/color/344/intellij-idea.png" />
+                            <img src="https://img.icons8.com/color/344/visual-studio-code-2019.png" style="margin-right: 0;"/>
+                          </div>
+                          <div class="shop-container-util shop-each_title">
+                            <span><a href="javascript:void(0)" class="prevent">IDE / Tool</a></span>
+                          </div>
+                          <div class="shop-container-util shop-each_hashtag">
+                            <ul>
+                              <li class="shop-hashtag-rep rep1">
+                                <div>
+                                  <span class="mainHashtag">#SpringToolSuite</span>
+                                  <span class="mainHashtag">#InteliJ</span>
+                                </div>
+                              </li>
+                              <br />
+                              <li class="shop-hashtag-rep rep2">
+                                <div>
+                                  <span class="mainHashtag">#Visual Studio Code</span>
+                                  <span class="mainHashtag"></span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="shop-each">
+                        <div class="shop-container">
+                          <div class="shop-container-util shop-each_img shop-img-rd">
+                            <img src="http://blog.ippon.fr/content/images/2017/05/junit5-logo.png" style="width: 55px; height: 55px;"/>
+                            <img src="https://img.icons8.com/dusk/344/postman-api.png"/>
+                          </div>
+                          <div class="shop-container-util shop-each_title">
+                            <span><a href="javascript:void(0)" class="prevent">테스트</a></span>
+                          </div>
+                          <div class="shop-container-util shop-each_hashtag">
+                            <ul>
+                              <li class="shop-hashtag-rep rep1">
+                                <div>
+                                  <span class="mainHashtag">#Junit5</span>
+                                  <span class="mainHashtag">#Postman</span>
+                                </div>
+                              </li>
+                              <br />
+                              <li class="shop-hashtag-rep rep2">
+                                <div>
+                                  <span class="mainHashtag"></span>
+                                  <span class="mainHashtag"></span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="shop-each">
+                        <div class="shop-container">
+                          <div class="shop-container-util shop-each_img shop-img-rd">
+                            <img src="https://img.icons8.com/color/344/git.png" />
+                            <img src="https://img.icons8.com/fluency/344/github.png" />
+                          </div>
+                          <div class="shop-container-util shop-each_title">
+                            <span><a href="javascript:void(0)" class="prevent">형상관리</a></span>
+                          </div>
+                          <div class="shop-container-util shop-each_hashtag">
+                            <ul>
+                              <li class="shop-hashtag-rep rep1">
+                                <div>
+                                  <span class="mainHashtag">#Git</span>
+                                  <span class="mainHashtag">#Github</span>
+                                </div>
+                              </li>
+                              <br />
+                              <li class="shop-hashtag-rep rep2">
+                                <div>
+                                  <span class="mainHashtag"></span>
+                                  <span class="mainHashtag"></span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="shop-each">
+                        <div class="shop-container">
+                          <div class="shop-container-util shop-each_img shop-img-rd">
+                            <img src="https://img.icons8.com/color/344/bootstrap.png" />
+                            <img src="https://seeklogo.com/images/F/font-awesome-logo-3010FE2434-seeklogo.com.png" style="width: 47px; height: 47px; padding-bottom: 7px;"/>
+                          </div>
+                          <div class="shop-container-util shop-each_title">
+                            <span><a href="javascript:void(0)" class="prevent">기타 프레임워크 및 라이브러리</a></span>
+                          </div>
+                          <div class="shop-container-util shop-each_hashtag">
+                            <ul>
+                              <li class="shop-hashtag-rep rep1">
+                                <div>
+                                  <span class="mainHashtag">#BootStrap</span>
+                                  <span class="mainHashtag">#Font Awesome</span>
+                                </div>
+                              </li>
+                              <br />
+                              <li class="shop-hashtag-rep rep2">
+                                <div>
+                                  <span class="mainHashtag"></span>
+                                  <span class="mainHashtag"></span>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section id="education" class="education">
+                <h2>Education</h2>
+                <div class="education-block">
+                  <h3>울산 KH정보교육원</h3>
+                  <span class="education-date">November 2021 - April 2022</span>
+                  <h4>(디지털컨버전스)멀티 디바이스 융합 자바(Java) 디지털 컨버전스 과정</h4>
+                  <div>웹프로그래밍에 필요한 전반적인 프로그래밍의 기초를 배움 (java11,SQL,HTML,CSS,JavaScript(ES6) 등)</div>
+                </div>
+              </section>
+
+            </div>
+          </div>
+        </div>
+        <!-- main.html -->
+      </div>
+    </div>
 
 
-    </script>
+    <div class="section" id="section2">
+      <div class="slide" id="slide1">
+        <div class="intro">
+          <!-- content.html -->
+          <div class="global-content">
+            <div class="main">
+              <div class="inner main-inner">
+                <!-- container -->
+                <!-- width : standard -->
+                <div class="container">
+                  <!-- shop_info -->
+                  <div class="shop_info_wrap">
+                    <div class="shop-info">
+                      <div class="shop-info_img">
+                        <div class="info-img-box">
+                          <div class="shop-img-slide-box">
+                            <div class="shop-img fade" style="display: block">
+                              <img src="/img/projectInfo/0001.png" />
+                            </div>
+                          </div>
+                          <div class="shop-img-slide-box">
+                            <div class="shop-img fade" style="display: none">
+                              <img src="/img/projectInfo/0002.png" />
+                            </div>
+                          </div>
+                          <div class="shop-img-slide-box">
+                            <div class="shop-img fade" style="display: none">
+                              <img src="/img/projectInfo/0003.png" />
+                            </div>
+                          </div>
+                          <div class="shop-img-slide-box">
+                            <div class="shop-img fade" style="display: none">
+                              <img src="/img/projectInfo/0004.png" />
+                            </div>
+                          </div>
+                          <div class="shop-img-slide-box">
+                            <div class="shop-img fade" style="display: none">
+                              <img src="/img/projectInfo/0005.png" />
+                            </div>
+                          </div>
+                          <a class="prev" onclick="plusSlides(-1)">❮</a>
+                          <a class="next" onclick="plusSlides(1)">❯</a>
+                        </div>
+                        <br />
+                      </div>
+          
+                      <!-- shop-info_content-wrap -->
+                      <div class="shop-info-content-wrap">
+                        <div class="shop-info-content shop-title-sub-box">
+                          <div class="shop-title-sub">
+                            <h1 id="shopName">Cafe Surfer</h1>
+                          </div>
+                        </div>
+                        <div class="shop-info-content shop-location-sub-box">
+                          <div class="shop-location-icon-box icon-box">
+                            <a href="#" class="location-icon prevent"></a>
+                          </div>
+                          <div class="location-txt txt-box">
+                            <span id="shopAddress">커피숍 정보 검색 웹 서비스</span>
+                          </div>
+                        </div>
+                        <div class="shop-info-content shop-hashtag-sub-box">
+                          <div class="shop-hashtag-icon-box icon-box">
+                            <img src="https://img.icons8.com/color/344/development-skill.png" class="hashtag-icon" />
+                          </div>
+                          <div class="hashtag-txt txt-box">
+                            <div>
+                              <span class="mainHashtag">#JAVA11</span>
+                              <span class="mainHashtag">#Thymeleaf</span>
+                              <span class="mainHashtag">#Oracle DB</span>
+                            </div>
+                            <br />
+                            <div>
+                              <span class="mainHashtag">#HTML5</span>
+                              <span class="mainHashtag">#CSS3</span>
+                              <span class="mainHashtag">#JavaScript(ES6)</span>
+                            </div>
+                            <br />
+                            <div>
+                              <span class="mainHashtag">#Spring Framework</span>
+                              <span class="mainHashtag">#Spring Boot</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="shop-info-content shop-call-sub-box">
+                          <div class="shop-call-icon-box icon-box">
+                            <a href="#" class="call-icon prevent"></a>
+                          </div>
+                          <div class="call-txt txt-box">
+                            <span style="margin-right: 10px;">ksdec19@gmail.com</span>
+                            <!-- input value에 본인 email 주소 넣기 -->
+                            <input type="text" id="mailAddress" name="mailAddress" style="display: none;"
+                            value="ksdec19@gmail.com">
+                            <img src="/img/icon/icons8-copy-24.png" class="addressCopy"></img>
+                          </div>
+                        </div>
+                        <div class="shop-info-content">
+                          <div class="shop-parking-icon-box icon-box">
+                            <img src="https://img.icons8.com/office/344/pdf.png" class="allday-parking-icon" />
+                          </div>
+                          <div class="pdfBtn">
+                            <a href="document/cafe surfer.pdf" class="pdfBtn-text">프로젝트 개발서</a>
+                          </div>
+                          <div class="shop-allday-icon-box icon-box">
+                            <img src="https://img.icons8.com/fluency/344/github.png" class="allday-parking-icon" />
+                          </div>
+                          <div class="githubBtn">
+                            <a href="https://github.com/ksdec19/teamprj_kh.git" target="_blank" class="githubBtn-text">Github 소스</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="map-box">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/W8JAV6u0YdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of shop_info -->
+          
+                  <!-- shop-contents_all -->
+                  <div class="shop-contents_all">
+                    <div class="content-info_wrap">
+                      <div class="content-info">
+                        <div class="content-info_title">
+                          <span>프로젝트 상세</span>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="menu-item-box menu_beverage">
+                      <ul class="item">
+                        <div class="review-box">
+                          <p class="review-text">
+                            Spring Frame Work, Spring Boot를 활용하여 커피숍 정보 검색 사이트를 만들었습니다.<br>
+                            OracleDB는 Spring JDBC를 통해 연동하였습니다.<br>
+                            HTML,CSS,JS,Bootstrap를 기반으로 제작되었고, AJAX와 REST API를 활용하였습니다.
+                          </p>
+                        </div>
+                      </ul>
+                    </div>
+                    <div class="content-info_wrap">
+                      <div class="content-info">
+                        <div class="content-info_title">
+                          <span>역할</span>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="menu-item-box menu_beverage">
+                      <ul class="item">
+                        <div class="review-box">
+                          <p class="review-text">
+                            프로젝트 시작단계에서 프로세스 설계를 담당하여 전체적인 틀을 만들었습니다. <br><br>
+                            프로젝트 진행단계에서는 핵심 기능인 검색 기능을 담당하여 <br>
+                            DAO,SVC파일 작성, 컨트롤러 구현 및 SQL 쿼리문 작성/수정을 하였습니다.
+                          </p>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- End of shop-contents_all -->
+                </div>
+              </div>
+              <!-- End of container -->
+            </div>
+          </div>
+          <!-- content.html -->
+        </div>
+      </div>
+
+      <div class="slide" id="slide2">
+        <!-- content.html -->
+        <div>
+          <!-- content.html -->
+          <div class="global-content">
+            <div class="main">
+              <div class="inner main-inner">
+                <!-- container -->
+                <h1>소요기술</h1>
+                <div class="containerPhoto">
+                  <img src="/img/teamProjectSlide/1.png" />
+                </div>
+              </div>
+              <!-- End of container -->
+            </div>
+          </div>
+          <!-- content.html -->
+        </div>
+        <!-- content.html -->
+      </div>
+
+      <div class="slide" id="slide3">
+        <!-- content.html -->
+        <div>
+          <!-- content.html -->
+          <div class="global-content">
+            <div class="main">
+              <div class="inner main-inner">
+                <!-- container -->
+                <h1>테이블 구성(ERD)</h1>
+                <div class="containerPhoto">
+                  <img src="/img/teamProjectSlide/2.png" />
+                </div>
+              </div>
+              <!-- End of container -->
+            </div>
+          </div>
+          <!-- content.html -->
+        </div>
+        <!-- content.html -->
+      </div>
+
+      <div class="slide" id="slide4">
+        <!-- content.html -->
+        <div>
+          <!-- content.html -->
+          <div class="global-content">
+            <div class="main">
+              <div class="inner main-inner">
+                <!-- container -->
+                <h1>SW 아키텍처</h1>
+                <div class="containerPhoto">
+                  <img src="/img/teamProjectSlide/3.png" />
+                </div>
+              </div>
+              <!-- End of container -->
+            </div>
+          </div>
+          <!-- content.html -->
+        </div>
+        <!-- content.html -->
+      </div>
+      
+      <div class="slide" id="slide5">
+        <!-- content.html -->
+        <div>
+          <!-- content.html -->
+          <div class="global-content">
+            <div class="main">
+              <div class="inner main-inner">
+                <!-- container -->
+                <h1>프로젝트 시연 영상</h1>
+                <div class="containerPhoto">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/W8JAV6u0YdQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <!-- End of container -->
+            </div>
+          </div>
+          <!-- content.html -->
+        </div>
+        <!-- content.html -->
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="../dist/fullpage.js"></script>
+  <script type="text/javascript" src="examples.js"></script>
+  <script type="text/javascript">
+      var myFullpage = new fullpage('#fullpage', {
+          sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+          anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+          menu: '#menu',
+          slidesNavigation: true,
+          lazyLoad: true,
+          credits: {enabled: false}
+      });
+  </script>
+
 </body>
 </html>
